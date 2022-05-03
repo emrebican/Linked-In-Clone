@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google icon -->
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Linked In Clone</title>
+</head>
+<body class="bg-light">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white pt-2 border-bottom border-light sticky-top">
+        <div style="width: 75%; height: 40px;" class="container px-auto">
+          <a class="navbar-brand" href="#">
+            <i style="color: #0073b1;" class="fa-brands fa-linkedin fs-1"></i>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form>
+                    <input id="search" style="width: 250px; background-color: #eef3f8; font-family:Arial, FontAwesome; font-size: 13px;" class="form-control me-2 border-0" type="search" placeholder="&#xF002;  Arama Yap" aria-label="Search">
+                </form>
+                <ul style="width: 65%;" class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-around text-center pt-2">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">
+                        <i class="fa-solid fa-house-chimney fs-5"></i>
+                        <br> <small>Ana Sayfa</small>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-user-group fs-5"></i>
+                        <br> <small>Ağım</small>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-briefcase fs-5"></i>
+                        <br> <small>İş ilanları</small>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-comment-dots fs-5"></i>
+                        <br> <small>Mesajlaşma</small>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-bell fs-5"></i>
+                        <br> <small>Bildirimler</small>
+                    </a>
+                </li>
+                <li class="nav-item dropdown border-end border-2 border-light">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="rounded-circle" src="https://images-cdn.9gag.com/photo/aArnK5E_700b.jpg" alt="" width="25" height="25" style="object-fit: cover;">
+                    <br><small>Ben</small>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle p-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="material-symbols-outlined fs-3">apps</span>
+                    <br><small>İş</small>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-6" href="#"><small style="color: #915907;" class="text-center">Premium'u ücretsiz <br> deneyin</small></a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div style="width: 88%;" class="row mx-auto mt-4">
+                <!-- LEFT -->
+                <div style="width: 20%;" class="col-sm-2 px-0">
+                    <div style="border-radius: 10px; border:1px solid #ddd;" class="col-sm-12 bg-white">
+                        <div class="row px-2 border-bottom border-light border-2">
+                            <div class="col-12 text-center pt-4 pb-3">
+                                <a href="#">
+                                    <img class="rounded-circle border border-light" src="https://images-cdn.9gag.com/photo/aArnK5E_700b.jpg" alt="" width="75" height="75" style="object-fit: cover;">
+                                </a>
+    
+                                <h6 class="pt-4">yunus emre</h6>
+                                <small style="font-size: 10px;" class="text-muted">Çukurova Üniversitesi eğitim kurumunda öğrenci</small>
+                            </div>
+                        </div>
+                        <div class="row px-2 border-bottom border-light border-2 ps-3" style="font-size: 13.5px;">
+                            <div class="col-12 py-2">
+                                <small class="text-muted">bağlantı</small> <i class="fa-solid fa-user-plus float-end"></i>
+                                <br>
+                                <small style="font-weight: 500;">İletişim ağınızı büyütün</small>
+                            </div>
+                        </div>
+                        <div class="row px-2 border-bottom border-light border-2 ps-3" style="font-size: 13.5px;">
+                            <div class="col-12 py-2">
+                                <small class="text-muted">Özel araç ve içgörülere erişin</small>
+                                <br>
+                                <small style="font-weight: 500;">Premium'u ücretsiz deneyin</small>
+                            </div>
+                        </div>
+                        <div class="row px-2 border-bottom border-light border-2 ps-3" style="font-size: 13.5px;">
+                            <div class="col-12 py-2">
+                                <i class="fa-solid fa-bookmark text-secondary pe-2"></i>
+                                <small style="font-weight: 500;">Ögelerim</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="border-radius: 10px; border:1px solid #ddd;" class="col-sm-12 bg-white mt-2">
+                        <div class="row px-2 border-bottom border-light border-2" style="font-size: 13.5px; line-height: 30px;">
+                            <div class="col-12 py-2 mt-2 border-bottom border-light ps-3">
+                                <small style="font-weight: 500;"><a style="text-decoration: none;" href="#">Gruplar</a></small>
+                                <br>
+                                <small style="font-weight: 500;"><a style="text-decoration: none;" href="#">Etkinlikler</a></small>
+                                <i class="fa-solid fa-plus text-secondary float-end pe-2"></i>
+                                <br>
+                                <small style="font-weight: 500;"><a style="text-decoration: none;" href="#">Takip edilen hashtagler</a></small>
+                            </div>
+                            <div class="col-12 py-2 mt-2 border-bottom border-light">
+                                <p class="text-center text-muted fs-6 mb-0">Daha fazla keşfet</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            <!-- CENTER -->
+            <div class="col-sm-6 mx-auto">
+                <div class="row">
+                    <div style="border-radius: 10px; border:1px solid #ddd;" class="col-12 text-center py-4 bg-white">
+                        <img src="https://media.licdn.com/media/AAYQAgSuAAgAAQAAAAAAABlvNp5yzndgSdCsu3q6Pw22qA.png" alt="" style="width: 130px;">
+                        <div style="line-height: 1.2;" class="text-body mt-3">
+                            <h5>Merhaba, şu anda iş arıyor musunuz?</h5>
+                            <p class="text-muted">Arayışınız için hazırlanmanıza yardımcı olabiliriz. Yanıtınız size özeldir.</p>
+                        </div>
+                        <div class="buttons d-flex justify-content-between mx-3 mt-3">
+                            <button style="width: 250px;" class="btn btn-outline-primary rounded-pill py-1">Evet</button>
+                            <button style="width: 250px;" class="btn btn-outline-primary rounded-pill py-1">Hayır</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="border-radius: 10px; border:1px solid #ddd;" class="col-12 pt-3 bg-white mt-2">
+                        <div class="input-group input-group-lg">
+                            <a href="#">
+                                <img class="rounded-circle border border-light" src="https://images-cdn.9gag.com/photo/aArnK5E_700b.jpg" alt="" width="50" height="50" style="object-fit: cover;">
+                            </a>
+                            <input type="text" class="form-control rounded-pill ms-2 fs-6" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Gönderi başlat">
+                        </div>
+                        <ul class="list-inline mt-3 d-flex justify-content-around">
+                            <li class="list-inline-item">
+                                <i class="fa-regular fa-image text-primary fs-5"></i>
+                                <span class="text-muted ms-2">Fotoğraf</span>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fa-brands fa-youtube text-success fs-5"></i>
+                                <span class="text-muted ms-2">Video</span>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fa-regular fa-calendar-days text-primary fs-5"></i>
+                                <span class="text-muted ms-2">Etkinlik</span>
+                            </li>
+                            <li class="list-inline-item">
+                                <i class="fa-regular fa-pen-to-square text-danger fs-5"></i>
+                                <span class="text-muted ms-2">Yazı Yaz</span>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                <ul class="list-inline">
+                    <hr style="width: 65%;">
+                    <li style="margin-top: -30px;" class="list-inline-item float-end"><small>
+                        Sıralama ölçütü: 
+                        <span class="fw-bold">En Önemli
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </small></li>
+                </ul>
+                <div class="row">
+                    <div style="border-radius: 10px; border:1px solid #ddd;" class="col-12 pt-3 bg-white mt-2">
+                        <div class="text-center mt-3 mx-4 mb-4">
+                            <h5 style="font-weight: 500;">yunus emre, daha fazla güncelleme ister misiniz?</h5>
+                            <small class="text-muted">Tanıyor olabileceğiniz kişileri ağınıza ekleyin ve akışınızda bu kişilerin güncellemelerini görün.</small>
+                        </div>
+                        <div class="row text-center mx-auto gap-auto">
+                            <div class="col-4 px-0">
+                                <div class="row py-3 border border-light rounded-3 mx-1 ">
+                                    <img class="rounded-circle" src="//unsplash.it/id/56/100/100" alt="">
+                                <small style="line-height: 1.2;">
+                                    <p class="fw-bold mt-3">Halil Yavaş</p>
+                                    <p style="margin-top: -12px;" class="text-muted">Çukurova Üniversitesi iletişim</p>
+                                </small>
+                                <section>
+                                    <ul class="list-inline d-flex align-items-center ps-1">
+                                        <li class="list-inline-item">
+                                            <img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D0BAQH4ZPIH2IXOcA/company-logo_100_100/0/1519905442307?e=2147483647&v=beta&t=C9d7qZaG2wKlRAuc0TbvSyU4EeW2lPQ-pZ-yEuy3dWM" alt="" style="width: 30px;">
+                                        </li>
+                                        <li class="list-inline-item text-muted"><small>Çukurova <br> Üniversitesi</small></li>
+                                      </ul>
+                                      <button class="btn btn-outline-primary rounded-pill px-4 py-1">Bağlantı Kur</button>
+                                </section>
+                                </div>
+                            </div>
+
+                            <div class="col-4 px-0">
+                                <div class="row py-3 border border-light rounded-3 mx-1">
+                                    <img class="rounded-circle" src="//unsplash.it/id/55/100/100" alt="">
+                                <small style="line-height: 1.2;">
+                                    <p class="fw-bold mt-3">Halil Yavaş</p>
+                                    <p style="margin-top: -12px;" class="text-muted">Çukurova Üniversitesi iletişim</p>
+                                </small>
+                                <section>
+                                    <ul class="list-inline d-flex align-items-center ps-1">
+                                        <li class="list-inline-item">
+                                            <img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D0BAQH4ZPIH2IXOcA/company-logo_100_100/0/1519905442307?e=2147483647&v=beta&t=C9d7qZaG2wKlRAuc0TbvSyU4EeW2lPQ-pZ-yEuy3dWM" alt="" style="width: 30px;">
+                                        </li>
+                                        <li class="list-inline-item text-muted"><small>Çukurova <br> Üniversitesi</small></li>
+                                      </ul>
+                                      <button class="btn btn-outline-primary rounded-pill px-4 py-1">Bağlantı Kur</button>
+                                </section>
+                                </div>
+                            </div>
+
+                            <div class="col-4 px-0">
+                                <div class="row py-3 border border-light rounded-3 mx-1">
+                                    <img class="rounded-circle" src="//unsplash.it/id/75/100/100" alt="">
+                                <small style="line-height: 1.2;">
+                                    <p class="fw-bold mt-3">Halil Yavaş</p>
+                                    <p style="margin-top: -12px;" class="text-muted">Çukurova Üniversitesi iletişim</p>
+                                </small>
+                                <section>
+                                    <ul class="list-inline d-flex align-items-center ps-1">
+                                        <li class="list-inline-item">
+                                            <img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D0BAQH4ZPIH2IXOcA/company-logo_100_100/0/1519905442307?e=2147483647&v=beta&t=C9d7qZaG2wKlRAuc0TbvSyU4EeW2lPQ-pZ-yEuy3dWM" alt="" style="width: 30px;">
+                                        </li>
+                                        <li class="list-inline-item text-muted"><small>Çukurova <br> Üniversitesi</small></li>
+                                      </ul>
+                                      <button class="btn btn-outline-primary rounded-pill px-4 py-1">Bağlantı Kur</button>
+                                </section>
+                                </div>
+                            </div>
+
+                            <div class="col-4 px-0 mt-3">
+                                <div class="row py-3 border border-light rounded-3 mx-1">
+                                    <img class="rounded-circle" src="//unsplash.it/id/95/100/100" alt="">
+                                <small style="line-height: 1.2;">
+                                    <p class="fw-bold mt-3">Halil Yavaş</p>
+                                    <p style="margin-top: -12px;" class="text-muted">Çukurova Üniversitesi iletişim</p>
+                                </small>
+                                <section>
+                                    <ul class="list-inline d-flex align-items-center ps-1">
+                                        <li class="list-inline-item">
+                                            <img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D0BAQH4ZPIH2IXOcA/company-logo_100_100/0/1519905442307?e=2147483647&v=beta&t=C9d7qZaG2wKlRAuc0TbvSyU4EeW2lPQ-pZ-yEuy3dWM" alt="" style="width: 30px;">
+                                        </li>
+                                        <li class="list-inline-item text-muted"><small>Çukurova <br> Üniversitesi</small></li>
+                                      </ul>
+                                      <button class="btn btn-outline-primary rounded-pill px-4 py-1">Bağlantı Kur</button>
+                                </section>
+                                </div>
+                            </div>
+
+                            <div class="col-4 px-0 mt-3">
+                                <div class="row py-3 border border-light rounded-3 mx-1">
+                                    <img class="rounded-circle" src="//unsplash.it/id/175/100/100" alt="">
+                                <small style="line-height: 1.2;">
+                                    <p class="fw-bold mt-3">Halil Yavaş</p>
+                                    <p style="margin-top: -12px;" class="text-muted">Çukurova Üniversitesi iletişim</p>
+                                </small>
+                                <section>
+                                    <ul class="list-inline d-flex align-items-center ps-1">
+                                        <li class="list-inline-item">
+                                            <img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D0BAQH4ZPIH2IXOcA/company-logo_100_100/0/1519905442307?e=2147483647&v=beta&t=C9d7qZaG2wKlRAuc0TbvSyU4EeW2lPQ-pZ-yEuy3dWM" alt="" style="width: 30px;">
+                                        </li>
+                                        <li class="list-inline-item text-muted"><small>Çukurova <br> Üniversitesi</small></li>
+                                      </ul>
+                                      <button class="btn btn-outline-primary rounded-pill px-4 py-1">Bağlantı Kur</button>
+                                </section>
+                                </div>
+                            </div>
+
+                            <div class="col-4 px-0 mt-3 mb-3">
+                                <div class="row py-3 border border-light rounded-3 mx-1">
+                                    <img class="rounded-circle" src="//unsplash.it/id/155/100/100" alt="">
+                                <small style="line-height: 1.2;">
+                                    <p class="fw-bold mt-3">Halil Yavaş</p>
+                                    <p style="margin-top: -12px;" class="text-muted">Çukurova Üniversitesi iletişim</p>
+                                </small>
+                                <section>
+                                    <ul class="list-inline d-flex align-items-center ps-1">
+                                        <li class="list-inline-item">
+                                            <img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D0BAQH4ZPIH2IXOcA/company-logo_100_100/0/1519905442307?e=2147483647&v=beta&t=C9d7qZaG2wKlRAuc0TbvSyU4EeW2lPQ-pZ-yEuy3dWM" alt="" style="width: 30px;">
+                                        </li>
+                                        <li class="list-inline-item text-muted"><small>Çukurova <br> Üniversitesi</small></li>
+                                      </ul>
+                                      <button class="btn btn-outline-primary rounded-pill px-4 py-1">Bağlantı Kur</button>
+                                </section>
+                                </div>
+                            </div>
+
+                            <a style="text-decoration: none;" class="py-2 border-top border-light" href="#">
+                                <h6>Daha fazla keşfet</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Center Bottom -->
+                    <div style="border-radius: 10px; border:1px solid #ddd;" class="col-12 pt-3 bg-white mt-2 mb-5">
+                        <div class="row">
+                            <div class="col-2 ps-3">
+                                <a href="#">
+                                    <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQEOTL3mUuCAdQ/company-logo_100_100/0/1646684582310?e=2147483647&v=beta&t=qp2VXg1jLqc0VGslBaHCiZ5_Gj6gM1I-ronp5NQqr5U" alt="" width="60">
+                                </a>
+                            </div>
+                            <div style="line-height: 1.2;" class="col-7 ps-0">
+                                <a href="#" style="text-decoration: none;">
+                                    <small class="fw-bold text-dark">Softinny Yazılım ve Bilgi Teknolojileri A.Ş.</small>
+                                </a> <br>
+                                <a href="#" style="text-decoration: none;">
+                                    <small class="text-muted">61 takipçi</small> <br>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                <small class="text-muted">Öne çıkarılan içerik</small>
+                                </a>
+                            </div>
+                            <div class="col-3 text-primary">
+                                <h6>
+                                <i class="fa-solid fa-plus"></i>
+                                    <a style="text-decoration: none;" class="mx-2" href="#">Takip Et</a>
+                                <i class="fa-solid fa-ellipsis fs-4 text-muted"></i>
+                                </h6>
+                            </div>
+
+                            <small class="px-3" style="font-weight: 500;">
+                                Ramazan Bayramınızı Kutlar, Sevdiklerinizle Birlikte Huzurlu Bir Bayram Geçirmenizi Dileriz. #RamazanBayramı #İyiBayramlar
+                            </small>
+                            <img class="mt-3" src="https://media-exp1.licdn.com/dms/image/C4D22AQGsGPbmX3Q2bA/feedshare-shrink_800/0/1651441169503?e=2147483647&v=beta&t=T3c4stkJJFonnUO3RmC0DZL1RGBsmYDcO0LeKBz_FMQ" alt="">
+                            <div class="col-12 bg-light py-2"></div>
+                            <div class="col-12 py-2 border-bottom border-light">
+                                <i style="transform: rotateY(180deg);" class="fa-solid fa-thumbs-up bg-primary rounded-circle p-1 text-white"></i>
+                                <small class="text-muted float-end">250 paylaşım</small>
+                            </div>
+                            <ul class="list-inline d-flex justify-content-around pt-3">
+                                <li class="list-inline-item">
+                                    <i style="transform: rotateY(180deg);" class="fa-regular fa-thumbs-up text-muted fs-5"></i>
+                                    <small style="font-weight: 500;" class="text-muted">Beğen</small>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fa-regular fa-comment text-muted fs-5"></i>
+                                    <small style="font-weight: 500;" class="text-muted">Yorum Yap</small>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-share text-muted fs-5"></i>
+                                    <small style="font-weight: 500;" class="text-muted">Yorum Yap</small>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fa-solid fa-paper-plane text-muted fs-5"></i>
+                                    <small style="font-weight: 500;" class="text-muted">Gönder</small>
+                                </li>
+                              </ul>
+                              <div style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" class="col-12 bg-light py-2">
+                                  <a style="text-decoration: none;" href="#">
+                                    <small class="text-muted">Yorum yapan ilk kişi olun</small>
+                                  </a>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- RIGHT -->
+            <div class="col-sm-3">
+                <div class="row">
+                    <div style="border-radius: 10px; border:1px solid #ddd;" class="col-12 bg-white py-3 px-3">
+                        <span style="font-weight: 700;">Akışınıza ekleyin</span><i class="fa-solid fa-circle-info float-end text-muted"></i>
+                        <div class="row mt-4">
+                            <div class="col-2">
+                                <img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D0BAQHEu8tboEwP2A/company-logo_200_200/0/1630950583246?e=2147483647&v=beta&t=i6DYBQ34DXQQpSeOrNP2zB5Ws1sq_Cj7R-76FvZio7w" alt="" style="width: 50px;">
+                            </div>
+                            <div style="line-height: 5px;" class="col-10 px-4">
+                                <p><small style="font-weight: 500;" class="text-nowrap">Clover S.A. Proprietary Limited</small></p>
+                                <small class="text-muted">Şirket * Yiyecek ve içecek</small>
+                                <button class="btn btn-outline-secondary rounded-pill mt-3 px-4 py-1">
+                                    <i class="fa-solid fa-plus"></i>
+                                    Takip Et
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-2">
+                                <img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D0BAQH17IKxwkDcCA/company-logo_100_100/0/1593517082360?e=2147483647&v=beta&t=ufflh1T_CLF96MrVrLHWeV3VyqbU-Kjmm3SG8isRJ0E" alt="" style="width: 50px;">
+                            </div>
+                            <div style="line-height: 5px;" class="col-10 px-4">
+                                <p><small style="font-weight: 500;" class="text-nowrap">Clover S.A. Proprietary Limited</small></p>
+                                <small class="text-muted">Şirket * Yiyecek ve içecek</small>
+                                <button class="btn btn-outline-secondary rounded-pill mt-3 px-4 py-1">
+                                    <i class="fa-solid fa-plus"></i>
+                                    Takip Et
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-2">
+                                <img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D0BAQHwzjnkh1IQ2w/company-logo_100_100/0/1612983528847?e=2147483647&v=beta&t=poEYsxlKLjRtHFk5KXqHE9NxoaqjlrvhHlT97ZPhA4s" alt="" style="width: 50px;">
+                            </div>
+                            <div style="line-height: 5px;" class="col-10 px-4">
+                                <p><small style="font-weight: 500;" class="text-nowrap">Clover S.A. Proprietary Limited</small></p>
+                                <small class="text-muted">Şirket * Yiyecek ve içecek</small>
+                                <button class="btn btn-outline-secondary rounded-pill mt-3 px-4 py-1">
+                                    <i class="fa-solid fa-plus"></i>
+                                    Takip Et
+                                </button>
+                            </div>
+                        </div>
+                        <small class="text-muted">Tüm tavsiyeleri görüntüle<i class="fa-solid fa-arrow-right-long ms-2"></i></small>
+                    </div>
+                    <div class="col-12 p-0">
+                        <div style="border-radius: 10px; border:1px solid #ddd;" class="col-12 bg-white py-3 px-3 mt-2">
+                            <img class="img-fluid" src="https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png" alt="">
+                        </div>
+                        <div class="col-12">
+                            <ul style="font-size: 14px; line-height: 1.8;" class="list-inline text-center mt-3">
+                                <li class="list-inline-item"><small><a class="text-muted text-decoration-none" href="#">Hakkında</a></small></li>
+                                <li class="list-inline-item"><small><a class="text-muted text-decoration-none" href="#">Erişilebilirlik</a></small></li>
+                                <li class="list-inline-item"><small><a class="text-muted text-decoration-none" href="#">Yardım Merkezi</a></small></li>
+                                <li class="list-inline-item"><small><a class="text-muted text-decoration-none" href="#">Gizlilik ve Koşullar
+                                    <i class="fa-solid fa-angle-down fs-6 ps-1"></i>
+                                </a></small></li>
+                                <li class="list-inline-item"><small><a class="text-muted text-decoration-none" href="#">Reklam Tercihleri</a></small></li>
+                                <li class="list-inline-item"><small><a class="text-muted text-decoration-none" href="#">Reklam</a></small></li>
+                                <li class="list-inline-item"><small><a class="text-muted text-decoration-none" href="#">Ticari Hizmetler
+                                    <i class="fa-solid fa-angle-down fs-6 ps-1"></i>
+                                </a></small></li>
+                                <li class="list-inline-item"><small><a class="text-muted text-decoration-none" href="#">LinkedIn uygulamasını yükle</a></small></li>
+                                <li class="list-inline-item"><small><a class="text-muted text-decoration-none" href="#">Daha Fazla</a></small></li>
+                              </ul>
+                              <p class="text-center">
+                                <span class="text-primary">Linked<i class="fa-brands fa-linkedin"></i></span>
+                                <small style="font-size: 10px;">LinkedIn Corporation © 2022</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    let body = document.querySelector('body');
+    let search = document.querySelector('#search');
+
+    body.addEventListener('click', funcOne);
+    search.addEventListener('click', funcOne);
+
+    function funcOne(e) {
+        if(e.target.id === 'search') {
+            search.style.width = '350px';
+            search.style.transition = 'all .3s';
+            search.setAttribute('placeholder', '\uF002     Arama Yap');
+        } else {
+            search.style.width = '250px';
+            search.setAttribute('placeholder', '\uF002  Arama Yap');
+        }
+    }
+</script>
+    
+    <script src="js/jquery-3.6.0.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
